@@ -64,26 +64,37 @@
     }
 }
 .replace-jq-centre-convert-btn-head {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 520;
     color: #0049a3;
+    max-width: 75%;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 30;
+    }
+
     @include media-breakpoint-up(md) {
         font-size: 35px;
     }
+
     @include media-breakpoint-up(lg) {
         font-size: 64px;
     }
 }
 .replace-jq-centre-convert-btn-subhead {
-    font-size: 15px;
+    font-size: 14px;
     color: #0049a3;
     text-align: center;
     max-width: 75%;
+    @include media-breakpoint-up(sm){
+        font-size: 18px;  
+    }
     @include media-breakpoint-up(md) {
         font-size: 18px;
     }
     @include media-breakpoint-up(lg) {
-        font-size: 21px;
+        font-size: 22px;
         max-width: 840px;
     }
 }
@@ -168,12 +179,15 @@
     outline: none;
     padding-top: 5px;
     width: 100%;
-    height: 650px;
+    height: 450px;
     border: 1px solid #e0eafd;
     background-color: #fafcff;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     position: sticky;
+    @include media-breakpoint-up(sm){
+        height: 650px;
+    }
 }
 .replace-jq-centre-convert-btn-text-area-converter .ace_gutter {
     background: #ebebeb;
@@ -203,7 +217,7 @@
 .section-faq {
     margin-bottom: 0 !important;
     .faq-item {
-        padding: 24px 40px;
+        padding: 20px 20px;
         background-color: #fff;
         box-sizing: border-box;
         border-radius: 12px;
@@ -295,9 +309,9 @@
     visibility: visible;
 }
 .replace-jq-btn-convert {
-    float: right;
+    display: flex;
+    align-items: center;
     position: relative;
-    vertical-align: middle;
     font-weight: 500;
     border: none;
     background-color: #e0eafd;
@@ -305,7 +319,6 @@
     color: #fff;
     background-color: #0858FE;
     border-color: #0858FE;
-    display: flex;
     gap: 6px;
     padding: 12px 20px;
     &:hover {
@@ -313,6 +326,9 @@
         background-color: #0E3481;
         border-color: #0E3481;
     }
+}
+.btn-btn-svg{
+    display: flex;
 }
 .replace-jq-centre-convert-btn-taskbar-title {
     font-size: 18px;
